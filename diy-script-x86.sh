@@ -2,6 +2,7 @@
 
 # 修改默认IP
 # sed -i 's/192.168.1.1/192.168.8.8/g' package/base-files/files/bin/config_generate
+
 # 后台IP设置
 export Ipv4_ipaddr="192.168.8.8"            # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
