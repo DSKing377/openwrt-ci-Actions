@@ -34,6 +34,7 @@ function git_sparse_clone() {
 # git clone --depth=1 -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
 # git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+# 添加 luci-app-accesscontrol-plus 插件
 git clone https://github.com/CrazyPegasus/luci-app-accesscontrol-plus package/luci-app-accesscontrol-plus
 # git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 # git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
