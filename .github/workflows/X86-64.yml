@@ -162,7 +162,7 @@ jobs:
       with:
         name: R${{ env.DATE }}-${{ github.run_number }} for ${{ env.FIRMWARE_TAG }}
         allowUpdates: false
-        tag: "R${{ env.DATE }}-${{ github.run_number }}-${{ env.FIRMWARE_TAG }}"
+        tag: "R${{ env.DATE }}-${{ github.run_number }}-${{ env.FIRMWARE_TAG }}" 
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
