@@ -153,7 +153,7 @@ jobs:
       with:
         name: R${{ env.DATE }}-${{ github.run_number }} for ${{ env.FIRMWARE_TAG }}
         allowUpdates: false
-        tag: ${{ env.DATE }}_${{ env.BD_PROJECT }}_${{ env.BD_TARGET }}_${{ env.REPO_BRANCH }}
+        tag: ${{ env.DATE }}_${{ env.BD_PROJECT }}_${{ env.BD_TARGET }}_${{ env.REPO_BRANCH | replace('.', '-') }}
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
