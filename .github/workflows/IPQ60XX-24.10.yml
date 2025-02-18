@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Set Date
+      run: echo "DATE=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+    
     - name: Check Server Performance(检查服务器性能)
       run: |
         echo "警告⚠"
