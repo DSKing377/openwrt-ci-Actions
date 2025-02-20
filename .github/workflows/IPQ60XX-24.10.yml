@@ -149,7 +149,7 @@ jobs:
 
     - name: Set Release TAG
       run: |
-        echo "TAG=${{ env.FIRMWARE_TAG }}_for_R$(echo "${{ env.DATE }}" | cut -d'_' -f1)" >> $GITHUB_ENV
+       echo "TAG=${{ env.FIRMWARE_TAG }}_for_R$(echo "${{ env.DATE }}" | cut -d' ' -f1)" >> $GITHUB_ENV
     
     - name: Upload Firmware To Release(发布固件)
       if: steps.compile.outputs.status == 'success' && env.FIRMWARE_RELEASE == 'true'
